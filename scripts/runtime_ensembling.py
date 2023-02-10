@@ -980,6 +980,7 @@ class Script(scripts.Script):
         if not shared.UNetBManager.enabled:
             shared.UNetBManager.reversed = False
             shared.UNetBManager.model_A_reset()
+            return
         shared.UNetBManager.easing_function = easing_function_list[curve_preset_idx]
         shared.UNetBManager.merge_target = float(merge_target_all)
 
